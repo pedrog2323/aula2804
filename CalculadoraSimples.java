@@ -19,16 +19,42 @@ public class CalculadoraSimples{
             System.out.println("3. Sair");
 
             System.out.print("Opção: ");
+
             op = entrada.nextInt();
 
             if(op == 1){
                 System.out.println("\n\t\t\t -- Soma --\n");
+
+                //Entrada
+                System.out.print("Informe N1: ");
+                n1 = entrada.nextInt();
+                System.out.print("Informe N2: ");
+                n2 = entrada.nextInt();
+
+                //Processamento
+                total = n1 + n2;
+
+                //Saída
+                System.out.printf(n1 + " + " + n2 + " = " + total);
+
             } else if(op == 2){
                 System.out.println("\n\t\t\t -- Subtração -- \n");
+                //Entrada
+                System.out.print("Informe N1: ");
+                n1 = entrada.nextInt();
+                System.out.print("Informe N2: ");
+                n2 = entrada.nextInt();
+
+                //Processamento
+                total = n1 - n2;
+
+                //Saída
+                System.out.printf(n1 + " - " + n2 + " = " + total);
+
             }else if(op == 3){
                 System.out.println("Forte Abraço!");
             }else{
-                System.out.println("Opção " + op+ "Incorreta!");
+                System.out.println("Opção " + op+ " Incorreta! ");
             }
             
 
